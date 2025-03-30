@@ -1,0 +1,87 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color : transparent;
+
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.custom-file-label::after {
+  content: "Choose File";
+}
+
+.upload-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.create-btn {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.list-group-item {
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .create-btn {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+}
+/* ################################################################## */
+/* ################################################################## */
+
+/* Custom styles */
+.container {
+  border: 2px solid #343a40; /* Dark border for the container */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.uploaded-image {
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Automatically adjust height */
+  border: 2px solid #6c757d; /* Thicker border */
+  border-radius: 10px;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.image-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Reduced padding */
+  border: 2px solid #6c757d; /* Thicker border */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa; /* Gray background color */
+}
+
+.validation-result {
+  font-size: 18px;
+  font-weight: bold;
+  color: #28a745; /* Green color for success */
+}
+
+.nft-list-item {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#uploadedImagesContainer {
+  margin: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between images */
+}
